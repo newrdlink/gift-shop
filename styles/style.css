@@ -353,9 +353,9 @@ a:hover.button-block_place_header {
 .media {
   width: 1170px;
   height: 370px;
+  background-color: #222222;
   background-image: url(/images/media.svg);
   background-repeat: no-repeat;
-  background-color: #222222;
   margin: auto;
   margin-top: 71px;
 }
