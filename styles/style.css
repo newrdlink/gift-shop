@@ -1,0 +1,519 @@
+.page {
+  width: 1440px;
+  /* мы ещё не умеем делать мобильную версию сайта, */
+  /* поэтому выше установлена минимальная ширина страницы */
+  max-width: 1600px;
+  /* выше установили ограничение по максимальной ширине */
+  margin: 0 auto;
+  padding: 0;
+  /* выше для экранов больше 1600px отцентрировали весь контент */
+  font-family: "Gilroy", "HomemadeApple", "Roboto", "Helvetica Neue", "Arial",
+    sans-serif;
+  /*background-color: rgb(194, 55, 55);*/
+  /*justify-content: center;*/
+}
+
+.header {
+  display: flex;
+  width: 1440px;
+  min-height: 116px;
+  position: relative;
+  background: #fafafa;
+}
+
+.logo {
+  font-family: "HomemadeApple";
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 39px;
+}
+
+.logo_place_header {
+  color: #231f20;
+  position: relative;
+  left: 80px;
+  margin-top: 39px;
+}
+
+.menu {
+  margin: auto;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.menu__link {
+  text-decoration: none;
+  /*display: inline;*/
+}
+
+.menu__link_place_header {
+  margin-right: 31px;
+  color: #000;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+a:hover.menu__link_place_header {
+  text-decoration: underline;
+}
+
+.button-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+.button-block_place_header {
+  position: absolute;
+  top: 36px;
+  right: 34px;
+  border: 1px solid #f7941e;
+  height: 44px;
+  width: 150px;
+  color: #f7941e;
+  text-decoration: none;
+}
+
+a:hover.button-block_place_header {
+  border: 1.5px solid rgb(228, 74, 2);
+  color: rgb(228, 74, 2);
+}
+/*20px урезали некоторые элементы из-за кривой картинки в title*/
+.main-content {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  height: 1280px;
+  width: 1440px;
+}
+
+.cards-title {
+  width: 1440px;
+  height: 700px;
+  background: #f1f1f2;
+  padding: 0;
+  margin: 0;
+  
+}
+
+.cards-title__header {
+  width: 433px;
+  height: 206px;
+  margin: 0 0 0 162px;
+  padding-top: 154px;
+  font-size: 56px;
+  font-weight: bold;
+  line-height: 69px;
+  color: #000000;
+}
+
+.cards-title__about {
+  width: 422px;
+  height: 57px;
+  font-size: 20px;
+  line-height: 140%;
+  font-weight: normal;
+  margin-left: 162px;
+  margin-top: 36px;
+}
+.button-block_place_cards-title {
+  border: 1px solid #f7941e;
+  margin-left: 162px;
+  margin-top: 52px;
+  height: 60px;
+  width: 200px;
+  background: #f7941e;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.cards-title__photo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 700px;
+  width: 719px;
+}
+
+.cards-subtitle {
+  position: relative;
+  width: 1440px;
+  height: 581px;
+  background: #f1f1f2;
+}
+
+.cards-subtitle__photo {
+  position: relative;
+  top: -19px;
+}
+
+.cards-subtitle__header {
+  position: absolute;
+  top: 124px;
+  padding: 0;
+  margin-left: 833px;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 140%;
+  color: #000;
+}
+
+.cards-subtitle__about {
+  position: absolute;
+  height: 168px;
+  width: 440px;
+  left: 833px;
+  top: 212px;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 140%;
+}
+
+.button-block_place_cards-subtitle {
+  position: absolute;
+  top: 436px;
+  left: 833px;
+  border: 1px solid #f7941e;
+  height: 60px;
+  width: 200px;
+  color: #f7941e;
+  text-decoration: none;
+}
+
+.shop {
+  min-height: 820px;
+  width: 1440px;
+}
+
+.shop__title {
+  margin-top: 96px;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  color: #000000;
+  font-weight: bold;
+}
+
+.shop__subtitle {
+  margin-top: 23px;
+  font-size: 18px;
+  line-height: 135%;
+  text-align: center;
+  color: #000000;
+}
+
+.shop-cards {
+  max-width: 1170px;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.shop-cards__card {
+  position: relative;
+  height: 436px;
+  width: 270px;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  margin-top: 64px;
+  background: #fafafa;
+}
+
+.shop-cards__card:hover {
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+.card__title {
+  position: absolute; /*для возможности правильно спозиционировать ссылку*/
+  padding-left: 24px;
+  top: 294px;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+/*по идее нужно было верстать исходя из того, 
+что должна появлятся тень на карточке, когда :hover*/
+.card__link {
+  display: block;
+  font-family: "Roboto";
+  font-weight: normal;
+  position: relative;
+  top: 392px;
+  padding-left: 24px;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.shop-cards__card_subject_birthday {
+  background-image: url("../images/Rectangle.svg");
+  background-repeat: no-repeat;
+}
+
+.shop-cards__card_subject_anniversary {
+  background-image: url("../images/Rectangle2.svg");
+  background-repeat: no-repeat;
+}
+
+.shop-cards__card_subject_valentine {
+  background-image: url("../images/Rectangle3.svg");
+  background-repeat: no-repeat;
+}
+
+.shop-cards__card_subject_christmas {
+  background-image: url("../images/Rectangle4.svg");
+  background-repeat: no-repeat;
+}
+
+.banner {
+  position: relative;
+  height: 240px;
+  width: 1440px;
+  background: #f7941e;
+}
+
+.banner__title {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  left: 235px;
+  top: 81px;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 140%;
+  color: #000000;
+}
+
+.banner__subtitle {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 52%;
+  left: 235px;
+  line-height: 140%;
+  font-size: 32px;
+  color: #000000;
+}
+
+.button-block_place_banner {
+  text-transform: uppercase;
+  position: absolute;
+  top: 96px;
+  right: 451px;
+  border: 1px solid #231f20;
+  border-radius: 5px;
+  height: 50px;
+  width: 200px;
+  color: #ffffff;
+  text-decoration: none;
+  background: #231f20;
+}
+
+.button-block_place_banner-rigth {
+  text-transform: uppercase;
+  position: absolute;
+  top: 96px;
+  right: 235px;
+  border: 1px solid #231f20;
+  border-radius: 5px;
+  height: 50px;
+  width: 200px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.blogs {
+  width: 1440px;
+  height: 1026px;
+  background: #fff;
+}
+
+.blogs__title {
+  height: 422px;
+  height: 39px;
+  text-align: center;
+  font-size: 32px;
+  line-height: 38px;
+  color: #000;
+  font-weight: normal;
+  margin-top: 88px;
+}
+
+.blogs__subtitle {
+  font-size: 18px;
+  line-height: 135%;
+  text-align: center;
+  color: #000;
+  margin-top: 23px;
+}
+
+.media {
+  width: 1170px;
+  height: 370px;
+  background-image: url(/images/Media.svg);
+  background-repeat: no-repeat;
+  background-color: #222222;
+  margin: auto;
+  margin-top: 71px;
+}
+
+.media__author {
+  font-size: 14px;
+  line-height: 140%;
+  color: #ffffff;
+  margin-left: 478px;
+  padding-top: 63px;
+}
+
+.media__title {
+  height: 125px;
+  width: 492px;
+  font-size: 48px;
+  line-height: 58px;
+  color: #fff;
+  margin-left: 478px;
+  margin-top: 27px;
+  font-weight: normal;
+}
+
+.media__links {
+  position: relative;
+  top: 30px;
+  font-size: 18px;
+  line-height: 140%;
+  color: #fff;
+  margin: 0 0 0 478px;
+  text-decoration: none;
+}
+
+a:hover.media__links {
+  text-decoration: underline;
+}
+.media-cards {
+  /*position: relative;*/
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  height: 290px;
+  margin: auto;
+}
+.media-cards__card-blog {
+  position: relative;
+  height: 290px;
+  width: 570px;
+  margin-top: 40px;
+}
+
+.media-cards__card-blog:hover {
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+.card-blog__title {
+  width: 474px;
+  height: 68px;
+  font-size: 24px;
+  line-height: 140%;
+  color: #000;
+  font-weight: bold;
+  margin: 48px 0 0 48px;
+  padding: 0;
+}
+
+.card-blog__subtitle {
+  font-size: 18px;
+  line-height: 140%;
+  height: 72px;
+  width: 474px;
+  margin: 16px 0 24px 48px;
+  padding: 0;
+}
+
+.card-blog__link {
+  font-size: 18px;
+  line-height: 140%;
+  margin-left: 48px;
+  color: black;
+  text-decoration: none;
+}
+
+.footer {
+  position: relative;
+  height: 410px;
+  width: 1440px;
+  background: #fafafa;
+}
+
+.menu_place_footer {
+  display: flex;
+  justify-content: space-around;
+  width: 842px;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 115px;
+}
+.menu__link_place_footer {
+  font-size: 14px;
+  line-height: 140%;
+  color: #000;
+  font-weight: normal;
+}
+
+a:hover.menu__link_place_footer {
+  text-decoration: underline;
+}
+
+.logo_place_footer {
+  display: inline;
+  margin: -10px 2px 0 0;
+  padding: 0;
+  color: #f7941e;
+}
+
+.footer__line {
+  position: absolute;
+  bottom: 222px;
+  left: 220px;
+  border: 1px solid #000000;
+  width: 1000px;
+  margin: auto;
+}
+
+.social-icons {
+  height: 40px;
+  width: 296px;
+  position: absolute;
+  bottom: 127px;
+  left: 572px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-icons__icon {
+  /*не доработал тени у иконок, тему тени еще не проходил, 
+по этому, надеюсь потом разберусь и поправлю*/
+}
+
+.copyright {
+  position: absolute;
+  color: #000;
+  font-size: 14px;
+  left: 618px;
+  bottom: 35px;
+  margin: 0;
+}
+
+.footer__link {
+  position: absolute;
+  color: #000;
+  font-size: 14px;
+  text-decoration: none;
+  right: 613px;
+  bottom: 35px;
+}
