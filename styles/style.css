@@ -9,8 +9,6 @@
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: "Gilroy", "HomemadeApple", "Roboto", "Helvetica Neue", "Arial",
     sans-serif;
-  /*background-color: rgb(194, 55, 55);*/
-  /*justify-content: center;*/
 }
 
 .header {
@@ -43,7 +41,6 @@
 
 .menu__link {
   text-decoration: none;
-  /*display: inline;*/
 }
 
 .menu__link_place_header {
@@ -98,7 +95,6 @@ a:hover.button-block_place_header {
   background: #f1f1f2;
   padding: 0;
   margin: 0;
-  
 }
 
 .cards-title__header {
