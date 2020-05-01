@@ -354,7 +354,7 @@ a:hover.button-block_place_header {
   width: 1170px;
   height: 370px;
   background-color: #222222;
-  background-image: url(/images/media.svg);
+  background-image: url(../images/media.svg);
   background-repeat: no-repeat;
   margin: auto;
   margin-top: 71px;
@@ -393,7 +393,6 @@ a:hover.media__links {
   text-decoration: underline;
 }
 .media-cards {
-  /*position: relative;*/
   display: flex;
   justify-content: space-between;
   width: 1170px;
